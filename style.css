@@ -1,0 +1,130 @@
+#getStarted{
+    margin-top:100px;
+    margin-bottom: 75px;
+  }
+  
+ #navlogin{
+     margin-right: 20px;
+ }
+  
+  .btn.getstarted {
+      color: #fff;
+      background-color: #f2c500;
+      border-color: #f2c500; /*set the color you want here*/
+  }
+  
+  .btn.getstarted:hover, .btn.getstarted:focus, .btn.getstarted:active, .btn.getstarted.active, .open>.dropdown-toggle.btn.getstarted {
+      color: #fff;
+      background-color: #49c9b1;
+      border-color: #49c9b1;
+
+  }
+
+  .btn.begin:hover, .btn.begin:focus, .btn.begin:active, .btn.begin.active, .open>.dropdown-toggle.btn.begin {
+    color: #000000;
+    background-color: #49c9b1;
+    border-color: #000000;
+
+}
+  
+  :root {
+    --jumbotron-padding-y: 3rem;
+  }
+  
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+  
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
+  nav .navbar-nav li a:active, nav .navbar-nav li a:hover, nav .navbar-nav li a:focus,  nav .navbar-nav li a.active{
+    color: #49c9b1 !important;
+   
+    }
+
+ 
+  
+
+    .lead{
+        margin-bottom:5%;
+    }
+    #courseMenu{
+        margin-top:5%;
+
+        padding-bottom: 2%;
+  
+        background-color: #49c9b1;
+
+    }
+    #courseMenu2{
+        margin-top:5%;
+
+        padding-bottom: 2%;
+  
+        background-color: #f2c500;
+
+    }
+
+    .go2{
+        justify-self: end;
+        margin-top: 5%;
+    }
+    .classes{
+        margin-top: 10px;
+    }
+
+    h5{
+ 
+        margin-bottom: 15px;  
+      }
+      #courses{
+          margin-top:10%;
+          justify-content: center;
+      }
+
+      #courseCard{
+         
+          margin-bottom: 5%;
+      }
+      
+      #programName{
+          margin-top: 5%;;
+      }
+
+      .whitetext{
+          color: #fff;
+          font-weight: bold;
+      }
+
+      .courselabel{
+          margin-top: 5%;
+      }
+
+      h6{
+          color: #49c9b1;
+      }
+
+      

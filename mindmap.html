@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+    
+
+    <title>Brainstorming</title>
+
+  </head>
+  <body>
+      
+    <html>
+<head>
+    <title></title>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<style>
+    body.journal{
+  width: 100%;
+  margin-top:10%;
+  background-color:#ffffff;
+  font-family: 'Roboto', sans-serif;
+  color:#000;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+textarea{
+    border:2px solid #CCC;
+    background:#FFF;
+
+    text-indent: 5px;
+}
+
+#entries{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#entries > ul{
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#entries > ul li{
+
+    text-align: left;
+
+}
+
+textarea {
+    resize: none;
+}
+
+.btn{
+    margin-top: 5%;
+}
+
+h1{
+    margin-bottom: 5%;
+}
+
+.container{
+    background-color:#fff;
+    margin:5%;
+    padding: 5%;
+}
+
+.nav_bc{
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+
+</style>
+</head>
+<body>
+    <nav id = "navbar nav-link active" class="navbar navbar-expand-lg navbar-light bg-light" aria-current="page">
+
+        <div class="container-fluid">
+           <a class="navbar-brand" href="#">PROTU</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+     
+         <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+                 <li class="nav-item">
+                     <a class="nav-link"  href="create.html">DISCOVER</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="experience.html">EXPERIENCE</a>
+                 </li>
+             </ul>
+         </div>
+       </div>
+ 
+       <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="navlogin">
+         <button class="btn btn-outline-dark me-md-2" type="button">Login</button>
+         <button class="btn btn-dark" type="button">Signup</button>
+       </div>
+ 
+ </nav>
+
+  <nav class="nav_bc" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item" ><a href="create.html">Discover</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Brainstorming</li>
+    </ol>
+  </nav>
+
+    <div id = "journal " class="container">
+       <div class="row ">
+           <div class="col-md-6">
+                <h1>Brainstorm new ideas</h1>
+                <div>
+                    <textarea id = "content" cols = "64" rows = "3" placeholder = "What would you like to do?"></textarea>
+                    
+                </div>
+                <div class="col-md-6 justify-content-end" >
+                    <button class="btn btn-outline-dark" id = " submit" onclick = "isEmpty();clearDiv();">Submit</button>
+                </div>
+           </div>
+           <div class="col-md-6 " >
+                    <div class = "comments" id = "entries" >            
+                        <ul>
+                          <div id = "comment-feed" >
+                            <li id = "first-entry" >
+              
+                            </li>
+                          </div>
+                        </ul>
+                  </div>            
+            </div>        
+       </div>
+
+       <div class="row ">
+      
+      </div>
+    </div>
+
+  
+
+   
+
+<script>
+
+
+String.prototype.isEmpty = function(){
+    return (this.length === 0 || !this.trim());
+};
+
+var guestMessages = {
+    msgs: [],
+
+    getMessages: function(msg){
+        this.msgs.push(value + "<hr>");
+      
+    },
+
+    printMessages: function(){
+        guestMessages.getMessages();
+        var showEntry = document.getElementById("first-entry").innerHTML = this.msgs;
+
+    }
+   
+};
+
+
+
+var getEntry = function(){
+    value = document.getElementById("content").value;
+    return value;
+
+};
+
+
+
+var clearDiv = function(){
+  document.getElementById("content").value = "";
+}
+
+
+var isEmpty = function(entry){
+    entry = getEntry();
+    var output = document.getElementById("content").value;
+    if ( output == '' ){
+              alert("Enter a message");
+    }
+     else {
+      guestMessages.printMessages();
+    }
+}
+
+
+
+</script>
+   
+  </body>
+       
+</html>
